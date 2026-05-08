@@ -1,0 +1,16 @@
+spring :
+    datasource :
+        driver-class-name : com.mysql.cj.jdbc.Driver
+        url : jdbc:mysql://localhost:3306/mychat
+        username : root
+        password : 695641275abcd
+
+mybatis-plus :
+    global-config :
+        db-config :
+            logic-delete-field : is_delete
+            logic-delete-value : 1
+            logic-not-delete-value : 0
+
+    configuration :
+        default-enum-type-handler : com.baomidou.mybatisplus.core.handlers.EnumTypeHandler
