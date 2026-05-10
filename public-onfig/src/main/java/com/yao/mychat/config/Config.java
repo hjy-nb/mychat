@@ -11,16 +11,5 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 public class Config {
-    //业务日志
-    public Logger getBusinessLogger() { return LoggerFactory.getLogger("BUSINESS"); }
 
-    //错误日志
-    public Logger getErrorLogger() {
-        return LoggerFactory.getLogger("ERROR");
-    }
-
-    //系统日志
-    public Logger getSystemLogger() {
-        return LoggerFactory.getLogger("SYSTEM");
-    }
 }

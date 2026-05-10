@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.yao.mychat.common.putenum.UserStateEnum;
+import lombok.Builder;
 import lombok.Data;
 import java.time.LocalDateTime;
 
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @TableName("user")
+@Builder
 public class UserEntity {
     @TableId(value = "user_id")
     private Long userId; // 用户ID
